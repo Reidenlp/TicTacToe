@@ -5,12 +5,6 @@ canvas{
 	margin: 10px;
 }
 
-@keyframes border-pulsate{
-    0%   { border-color: rgba(173, 55, 26, 1); }
-    50%  { border-color: rgba(0, 255, 255, 0); }
-    100% { border-color: rgba(173, 55, 26, 1); }
-}
-
 body{
 	background-image: url('https://wallpaperaccess.com/full/3893223.jpg');
 	background-repeat: no-repeat;
