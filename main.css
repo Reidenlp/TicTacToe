@@ -1,0 +1,34 @@
+canvas{
+	border: 10px solid beige;
+	border-style: groove;
+	border-radius: 20%;
+	margin: 10px;
+}
+
+@keyframes border-pulsate{
+    0%   { border-color: rgba(173, 55, 26, 1); }
+    50%  { border-color: rgba(0, 255, 255, 0); }
+    100% { border-color: rgba(173, 55, 26, 1); }
+}
+
+body{
+	background-image: url('https://wallpaperaccess.com/full/3893223.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1{
+	color: white; 
+	font-family: cursive;
+	text-align: center;
+}
+
+a{
+	color: white;
+	font-size: 30px;
+	font-family: cursive;
+	
+}
+a:active{
+	color: white;
+}
