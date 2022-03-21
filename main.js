@@ -5,22 +5,26 @@ var p1;
 var p2;
 var activeplayer; // Anzahl Z�ge - Nach neun ist Schluss.
 
- p1 = prompt("Farbe für Spieler 1, die Farben nur in Englisch schreiben!");
- p2 = prompt("Farbe für Spieler 2, die Farben nur in Englisch schreiben!");
- 
+// Elemente
+var playerInput = document.getElementById("player");
+var ctx = document.getElementById(id).getContext("2d");
+
+p1 = prompt("Farbe für Spieler 1, die Farben nur in Englisch schreiben!");
+p2 = prompt("Farbe für Spieler 2, die Farben nur in Englisch schreiben!");
+
 
 
 
   
-  function changecolor() {
+function changeColor() {
  if(color == p1) {
   color = p2;
   color_zahl = 0;
-  document.getElementById("player").textContent = "Spieler 1 ist drann"; //"Spieler 1 ist drann!"
+  playerInput.textContent = "Spieler 1 ist dran"; //"Spieler 1 ist drann!"
  } else {
   color = p1;
   color_zahl = 1;
-  document.getElementById("player").textContent = "Spieler 2 ist drann"; //"Spieler 2 ist drann!"
+  playerInput.textContent = "Spieler 2 ist dran"; //"Spieler 2 ist drann!"
  }
 }
 
@@ -29,15 +33,13 @@ var activeplayer; // Anzahl Z�ge - Nach neun ist Schluss.
 function makemecolored(id) {
 
   if(fields[id] != 1 && fields[id] != 0) {
-    changecolor();
-    var ctx = document.getElementById(id).getContext("2d");
+    changeColor();
     ctx.fillStyle = color;
     ctx.fillRect(0,0,140,140);
     fields[id] = color_zahl;
     testwin();
     zuege++;
     testende();
-	
   }
 }
 
