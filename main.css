@@ -1,28 +1,29 @@
-canvas{
+canvas {
+	width: 140px;
+	height: 140px;
 	border: 10px solid beige;
 	border-style: groove;
 	border-radius: 20%;
 	margin: 10px;
 }
 
-body{
+body {
 	background-image: url('https://wallpaperaccess.com/full/3893223.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
-h1{
+h1 {
 	color: white; 
 	font-family: cursive;
 	text-align: center;
 }
 
-a{
+a {
 	color: white;
 	font-size: 30px;
 	font-family: cursive;
-	
 }
-a:active{
+a:active {
 	color: white;
 }
